@@ -95,7 +95,7 @@ body {
    7. BUTTON (block, bisa dipakai di mana saja)
    ===================================================== */
 .button {
-  padding: 6px 18px;
+  padding: 6px 24px;
   margin-top: 8px;
   font-weight: bold;
   border-radius: 6px;
@@ -110,7 +110,7 @@ body {
 /* =====================================================
    8. MAIN (Block)
    ===================================================== */
-.site-main {
+.site-main__information {
   margin-top: 14px;
   text-align: center;
 }
@@ -144,4 +144,70 @@ body {
   margin-top: 10px;
   font-weight: lighter;
   text-align: center;
+}
+
+.site-main__quote {
+  background-color: #e5e7eb;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.site-main--quote.container {
+  max-width: 730px;
+}
+
+.quote__text {
+  font-size: 30px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.quote__footer {
+  text-align: end;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* =====================================================
+   9. FOOTER (Block)
+   ===================================================== */
+.site-footer {
+  margin-top: 100px;
+}
+
+.site-footer__box {
+  display: flex;
+  background-color: #3882f6;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 48px;
+  margin-bottom: 100px;
+}
+
+.site-footer__title {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.site-footer__text {
+  color: rgb(222, 222, 222);
+}
+
+.footer__button {
+  color: white;
+  border-color: white;
+  background-color: #3882f6;
+}
+
+.site-footer__copyright {
+  background-color: #1f2937;
+  color: whitesmoke;
+  text-align: center;
+  padding: 28px;
+  font-size: 16px;
 }
