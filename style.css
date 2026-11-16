@@ -1,108 +1,137 @@
+/* =====================================================
+   1. RESET
+   ===================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-li,
-a,
-.hero-txt {
-  text-decoration: none;
-  list-style-type: none;
-  color: #e5e7eb;
-  font-size: 18px;
-}
-
+/* =====================================================
+   2. BODY STYLE
+   ===================================================== */
 body {
   /* border: 3px solid #1e90ff; */
   font-family: Roboto;
   /* max-height: 100vh; */
 }
 
-.header-one {
-  font-size: 24px;
-  color: #f9faf8;
-  font-weight: 900;
-}
-
-.header-two {
-  font-size: 48px;
-  color: #f9faf8;
-  font-weight: 900;
-}
-
-.header-card {
-  /* max-width: 1400px; */
-  /* border: 2px solid rebeccapurple; */
-  margin: auto;
-  background-color: #1f2937;
-}
-
-.logo-link,
-.hero-card,
-.main-card {
+/* =====================================================
+   3. LAYOUT BERSAMA
+   Semua elemen yang memiliki style yang sama
+   ===================================================== */
+.container {
   max-width: 1000px;
   margin: auto;
   padding: 8px;
 }
 
-.logo-link,
-.links {
+/* =====================================================
+   4. TEKS
+   Semua text yang memiliki style yang sama
+   ===================================================== */
+.site-header__nav-item,
+.site-header__nav-link,
+.hero__text {
+  color: #e5e7eb;
+  font-size: 16px;
+}
+
+/* =====================================================
+   5. SITE HEADER (Block)
+   ===================================================== */
+.site-header {
+  background-color: #1f2937;
+}
+
+.site-header__lolink,
+.site-header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
 }
 
-.hero-card {
+.site-header__logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.site-header__nav-item {
+  list-style-type: none;
+}
+
+.site-header__nav-link {
+  text-decoration: none;
+}
+
+/* =====================================================
+   6. HERO (Block)
+   ===================================================== */
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 48px;
 }
 
-.hero-content,
-.hero-image {
+.hero__content,
+.hero__image {
   margin-top: 48px;
   max-width: 500px;
   max-height: 250px;
   flex: 1;
   margin-bottom: 100px;
-  /* border: 2px solid black; */
 }
 
+.hero__title {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+/* =====================================================
+   7. BUTTON (block, bisa dipakai di mana saja)
+   ===================================================== */
 .button {
   padding: 6px 18px;
   margin-top: 8px;
-  border-color: #1e90ff;
-  background-color: #1e90ff;
-  color: white;
+  font-weight: bold;
   border-radius: 6px;
 }
 
-.main-card {
+.hero__button {
+  border-color: #1e90ff;
+  background-color: #1e90ff;
+  color: white;
+}
+
+/* =====================================================
+   8. MAIN (Block)
+   ===================================================== */
+.site-main {
   margin-top: 14px;
-  gap: 24px;
   text-align: center;
 }
 
-.main-card h2 {
+.site-main__title {
   margin-bottom: 40px;
   font-size: 26px;
 }
 
-.img-container {
+.site-main__list {
   display: flex;
   justify-content: center;
   gap: 48px;
   flex-wrap: wrap;
 }
 
-.img-card {
+.site-main__item {
   width: 160px;
 }
 
-.img-card img {
+.site-main__image {
   width: 160px;
   height: 160px;
   border: 3px solid dodgerblue;
@@ -110,7 +139,7 @@ body {
   display: block;
 }
 
-.img-card figcaption {
+.site-main__caption {
   font-size: 16px;
   margin-top: 10px;
   font-weight: lighter;
